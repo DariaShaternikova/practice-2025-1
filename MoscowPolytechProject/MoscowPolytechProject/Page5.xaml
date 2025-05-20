@@ -1,0 +1,32 @@
+﻿<Page x:Class="MoscowPolytechProject.Page5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MoscowPolytechProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+     Title="ResourcesPage" Background="White" >
+
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock Text="Полезные ресурсы" FontSize="24" FontWeight="Bold" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Основные ссылки:" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <Button x:Name="btnLk" Content="Личный кабинет Московского Политеха" 
+                    Style="{StaticResource ResourceButtonStyle}" Click="btnLk_Click"
+                    Tag="https://e.mospolytech.ru/#/login"/>
+
+            <Button x:Name="btnDataLens" Content="Yandex DataLens" 
+                    Style="{StaticResource ResourceButtonStyle}" Click="btnDataLens_Click"
+                    Tag="https://datalens.yandex.ru"/>
+
+            <TextBlock Text="Ресурсы для разработчиков:" FontSize="18" FontWeight="Bold" Margin="0,20,0,10"/>
+
+            <Button x:Name="btnGitHub" Content="GitHub репозиторий" 
+                    Style="{StaticResource ResourceButtonStyle}" Click="btnGitHub_Click"
+                    Tag="https://github.com/mospolytech/reporting-system"/>
+        </StackPanel>
+    </ScrollViewer>
+</Page>
